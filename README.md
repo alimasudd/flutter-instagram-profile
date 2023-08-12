@@ -1,8 +1,8 @@
 
-### Image ###
+### Network Image ###
 
 * Picsum - https://picsum.photos/
 
 ## UI ##
 
-![App UI](/image.jpg)
+![App UI](/image_ui.jpg)
