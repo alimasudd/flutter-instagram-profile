@@ -50,8 +50,8 @@ class InstagramUI extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      InfoItem("Post", "345"),
-                      InfoItem("Follower", "345"),
+                      InfoItem("Post", "15"),
+                      InfoItem("Follower", "1256"),
                       InfoItem("Following", "345"),
                     ],
                   ),

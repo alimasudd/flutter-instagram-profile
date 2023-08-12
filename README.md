@@ -3,6 +3,6 @@
 
 * Picsum - https://picsum.photos/
 
-## UI ##
+### UI ###
 
-![App UI](/image_ui.jpg)
+![App UI](/image.jpg)
