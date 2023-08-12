@@ -5,4 +5,4 @@
 
 ### Dashbord UI ###
 
-![App UI](/image.png)
+![App UI](/image.jpg)
