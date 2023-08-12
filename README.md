@@ -1,8 +1,8 @@
 
-### API ###
+### Image ###
 
-* Kawal Corona - https://kawalcorona.com/api/
+* Picsum - https://picsum.photos/
 
-### Dashbord UI ###
+## UI ##
 
 ![App UI](/image.jpg)
