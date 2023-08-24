@@ -5,4 +5,4 @@
 
 ### UI ###
 
-![App UI](/image.jpg)
+<img src=/image.jpg width="250">
