@@ -137,6 +137,24 @@ class InstagramUI extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(
+            height: 15,
+          ),
+          const Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              TabItem(icon: Icons.grid_on_outlined, active: true),
+              TabItem(icon: Icons.person_pin_outlined, active: false),
+            ],
+          ),
+          GridView.builder(
+            itemCount: 125,
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 3, mainAxisSpacing: 5, crossAxisSpacing: 5),
+              itemBuilder: (context, index) =>
+                  Image.network("https://picsum.photos/id/${213 + index}/200/300", fit: BoxFit.cover,))
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
