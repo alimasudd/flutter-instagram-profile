@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'widgets/info_item.dart';
 import 'widgets/profile_picture.dart';
 import 'widgets/story_item.dart';
+import 'widgets/tab_items.dart';
 
 class InstagramUI extends StatelessWidget {
   const InstagramUI({Key? key}) : super(key: key);
@@ -50,7 +51,7 @@ class InstagramUI extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      InfoItem("Post", "15"),
+                      InfoItem("Post", "125"),
                       InfoItem("Follower", "1256"),
                       InfoItem("Following", "345"),
                     ],
@@ -135,7 +136,7 @@ class InstagramUI extends StatelessWidget {
                 ],
               ),
             ),
-          )
+          ),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -144,17 +145,13 @@ class InstagramUI extends StatelessWidget {
         showUnselectedLabels: false,
         selectedItemColor: Colors.black87,
         unselectedItemColor: Colors.grey,
-        items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home),
-              label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.search),
-              label: "Search"),
-          BottomNavigationBarItem(icon: Icon(Icons.add_box),
-              label: "Post"),
-          BottomNavigationBarItem(icon: Icon(Icons.favorite),
-              label: "Activity"),
-          BottomNavigationBarItem(icon: Icon(Icons.person),
-              label: "Profile"),
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.search), label: "Search"),
+          BottomNavigationBarItem(icon: Icon(Icons.add_box), label: "Post"),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.favorite), label: "Activity"),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
         ],
       ),
     );
