@@ -125,6 +125,10 @@ class InstagramUI extends StatelessWidget {
                     link: "https://picsum.photos/seed/picsum/200/300",
                   ),
                   StoryItem(
+                    title: "Interest",
+                    link: "https://picsum.photos/300/300?grayscale",
+                  ),
+                  StoryItem(
                     title: "Travel",
                     link: "https://picsum.photos/200/300?grayscale",
                   ),
