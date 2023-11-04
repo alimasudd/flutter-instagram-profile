@@ -3,10 +3,10 @@
 import 'package:flutter/material.dart';
 
 class InfoItem extends StatelessWidget {
-  InfoItem(this.title, this.value);
+  const InfoItem(this.title, this.value, {super.key});
 
-  String title;
-  String value;
+  final String title;
+  final String value;
 
   @override
   Widget build(BuildContext context) {
