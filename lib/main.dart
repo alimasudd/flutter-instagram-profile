@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:instagram_profile/instagram_ui/profile_ig.dart';
+import 'package:instagram_profile/instagram_ui/login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: InstagramUI(),
+      home: LoginView(),
     );
   }
 }
