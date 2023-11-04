@@ -14,26 +14,22 @@ class ProfilePicture extends StatelessWidget {
           height: 107,
           width: 107,
           decoration: BoxDecoration(
-              gradient: LinearGradient(begin: Alignment.topCenter,end: Alignment.bottomCenter, colors: [Colors.red, Colors.amber]),
-              borderRadius: BorderRadius.circular(60)
-          ),
+              gradient: const LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [Colors.red, Colors.amber]),
+              borderRadius: BorderRadius.circular(60)),
         ),
-
         Container(
           height: 100,
           width: 100,
           decoration: BoxDecoration(
-              image: DecorationImage(
+              image: const DecorationImage(
                   image: NetworkImage("https://picsum.photos/id/64/200/300"),
-                  fit: BoxFit.cover
-              ),
-              border: Border.all(
-                  color: Colors.white,
-                  width: 3
-              ),
+                  fit: BoxFit.cover),
+              border: Border.all(color: Colors.white, width: 3),
               color: Colors.grey,
-              borderRadius: BorderRadius.circular(60)
-          ),
+              borderRadius: BorderRadius.circular(60)),
         )
       ],
     );
