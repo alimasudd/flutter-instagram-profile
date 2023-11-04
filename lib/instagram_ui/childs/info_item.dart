@@ -14,11 +14,11 @@ class InfoItem extends StatelessWidget {
       children: [
         Text(
           value,
-          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
         ),
         Text(
           title,
-          style: TextStyle(fontSize: 15),
+          style: const TextStyle(fontSize: 15),
         )
       ],
     );
