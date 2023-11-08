@@ -155,6 +155,31 @@ class _LoginViewState extends State<LoginView> {
 
                 // social media
                 const SizedBox(height: 30),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    InkWell(
+                      onTap: () {},
+                      child: Image.asset(
+                        'assets/images/google.png',
+                        width: 25,
+                      ),
+                    ),
+                    const SizedBox(width: 20),
+                    Image.asset(
+                      'assets/images/facebook.png',
+                      width: 25,
+                    ),
+                    const SizedBox(width: 20),
+                    InkWell(
+                      onTap: () {},
+                      child: Image.asset(
+                        'assets/images/apple.png',
+                        width: 25,
+                      ),
+                    ),
+                  ],
+                ),
 
                 //text daftar
                 const SizedBox(height: 30),
