@@ -90,6 +90,15 @@ class _LoginViewState extends State<LoginView> {
                   child: TextFormField(
                     style: const TextStyle(fontSize: 15),
                     decoration: InputDecoration(
+                      suffixIcon: IconButton(
+                          icon: Icon(isObscure
+                              ? Icons.visibility
+                              : Icons.visibility_off),
+                          onPressed: () {
+                            setState(() {
+                              isObscure = !isObscure;
+                            });
+                          }),
                       contentPadding: const EdgeInsets.symmetric(
                           vertical: 0, horizontal: 10),
                       fillColor: Colors.grey.shade600,
