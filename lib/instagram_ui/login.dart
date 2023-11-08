@@ -123,6 +123,7 @@ class _LoginViewState extends State<LoginView> {
                 ),
                 ElevatedButton(
                   onPressed: () {
+                    _validation();
                   },
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.grey.shade800,
