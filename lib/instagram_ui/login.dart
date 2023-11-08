@@ -88,6 +88,8 @@ class _LoginViewState extends State<LoginView> {
                 SizedBox(
                   height: 45,
                   child: TextFormField(
+                    controller: password,
+                    obscureText: isObscure,
                     style: const TextStyle(fontSize: 15),
                     decoration: InputDecoration(
                       suffixIcon: IconButton(
