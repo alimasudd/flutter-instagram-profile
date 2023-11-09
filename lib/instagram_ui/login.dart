@@ -46,6 +46,7 @@ class _LoginViewState extends State<LoginView> {
                 SizedBox(
                   height: 45,
                   child: TextFormField(
+                    controller: email,
                     style: const TextStyle(fontSize: 15),
                     autocorrect: false,
                     textCapitalization: TextCapitalization.none,
