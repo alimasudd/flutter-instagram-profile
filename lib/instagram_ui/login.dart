@@ -13,6 +13,26 @@ class _LoginViewState extends State<LoginView> {
   TextEditingController password = TextEditingController();
   var isObscure = true;
 
+  _validation() {
+    if (email.text.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+        content: Text('Email tidak boleh kosong'),
+        duration: Duration(seconds: 1),
+      ));
+    } else if (password.text.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+        content: Text('Password tidak boleh kosong'),
+        duration: Duration(seconds: 1),
+      ));
+    } else {
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const InstagramUI(),
+          ));
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
