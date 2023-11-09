@@ -11,6 +11,7 @@ class LoginView extends StatefulWidget {
 class _LoginViewState extends State<LoginView> {
   TextEditingController email = TextEditingController();
   TextEditingController password = TextEditingController();
+  var isObscure = true;
 
   @override
   Widget build(BuildContext context) {
