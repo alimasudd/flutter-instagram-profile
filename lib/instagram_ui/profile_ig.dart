@@ -152,6 +152,17 @@ class InstagramUI extends StatelessWidget {
               TabItem(icon: Icons.person_pin_outlined, active: false),
             ],
           ),
+          LayoutBuilder(
+            builder: (BuildContext context, BoxConstraints constraints) {
+              if (constraints.maxWidth <= 600) {
+                return ImageGrid(gridCount: 3);
+              } else if (constraints.maxWidth <= 1200) {
+                return ImageGrid(gridCount: 5);
+              } else {
+                return ImageGrid(gridCount: 7);
+              }
+            },
+          ),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
