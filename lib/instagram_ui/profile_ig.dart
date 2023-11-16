@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'widgets/info_item.dart';
-import 'widgets/profile_picture.dart';
-import 'widgets/story_item.dart';
-import 'widgets/tab_items.dart';
+import 'childs/info_item.dart';
+import 'childs/profile_picture.dart';
+import 'childs/story_item.dart';
+import 'childs/tab_items.dart';
 
 class InstagramUI extends StatelessWidget {
   const InstagramUI({Key? key}) : super(key: key);
@@ -11,6 +11,7 @@ class InstagramUI extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         backgroundColor: Colors.white,
         centerTitle: true,
         title: const Row(
@@ -151,14 +152,6 @@ class InstagramUI extends StatelessWidget {
               TabItem(icon: Icons.person_pin_outlined, active: false),
             ],
           ),
-          GridView.builder(
-            itemCount: 125,
-              shrinkWrap: true,
-              physics: const NeverScrollableScrollPhysics(),
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 3, mainAxisSpacing: 5, crossAxisSpacing: 5),
-              itemBuilder: (context, index) =>
-                  Image.network("https://picsum.photos/id/${213 + index}/200/300", fit: BoxFit.cover,))
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -177,5 +170,26 @@ class InstagramUI extends StatelessWidget {
         ],
       ),
     );
+  }
+}
+
+class ImageGrid extends StatelessWidget {
+  ImageGrid({
+    super.key, required this.gridCount,
+  });
+  final int gridCount;
+
+  @override
+  Widget build(BuildContext context) {
+    return GridView.builder(
+        itemCount: 45,
+        shrinkWrap: true,
+        physics: const NeverScrollableScrollPhysics(),
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: gridCount, mainAxisSpacing: 5, crossAxisSpacing: 5),
+        itemBuilder: (context, index) => Image.network(
+              "https://picsum.photos/id/${213 + index}/200/300",
+              fit: BoxFit.cover,
+            ));
   }
 }
